@@ -5,6 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>Демо-сайт</title>
+    <!-- Sber Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'stm.start':
+new Date().getTime(),event:'stm_init'}); 
+w['stmUrl']='https://tvldw-sbc000001.delta.sbrf.ru/';
+var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+j.async=true;j.src=
+'https://tvldw-sbc000001.delta.sbrf.ru/stm/container/'+i+'.js?v=' + Math.random();
+f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','STM-Y60QV10962');</script>
+<!-- End Sber Tag Manager -->
+     <script>
+        initABTest("60ac166478d64f37");
+        async function initABTest(e){const t="__",i="_",n="0",s="https:",r="//",o="MOBILE",a="TABLET",c="DESKTOP",d="AB_TEST_USER_AGENTS",p=["utm_source","utm_medium","utm_campaign","utm_term","utm_content","_openstat","yclid","clid"],l=window.navigator.userAgent.toLowerCase(),u="exp.ID",m=function(e){const t="SITE_Widget_AB_Exp_Init",i={testCode:e,id:""};return{scriptStart:e=>{$(t,"start_ab_test",e,i)},userAgentEvent:e=>{$(t,`${e}_user_agent`,"",i)},errorParamsMatch:e=>{$(t,"error_params_match",Object.entries(e).map(([e,t])=>`${e}_${t}`).join("__"),i)},errorRequestAbDict:e=>{$(t,"error_request_ab_dict",e,i)},showExpPage:t=>{$("SITE_Widget_AB_Exp",`exp_${e}`,`branch_${t}`,{...i,id:t})}}}(e);if(m.scriptStart(),await async function(){let e=!0;try{const i=await fetch(encodeURI((t=d,`/proxy/services/dict-services/serviceProperty/propertiesByName?serviceName=abTest&propertyName=${t}`)),{method:"GET"});if(!i.ok)throw new Error(i.statusText);{const t=await i.json();(t.length&&t[0].propertyName===d&&t[0].propertyValue?t[0].propertyValue.split("|"):[]).forEach(t=>{l.includes(t.toLowerCase())&&(e=!1)})}}catch(e){}var t;return e}()){m.userAgentEvent("detected");try{const s=w("sbrf.region_id")||window.SBT?.REGION_DATA?.REGION_ID?.toString(),r=w(u),d=function(e,t,i){return`/proxy/services/dict-ab-test/public/abTest?testCode=${e}&date=${t}&regionCode=${i}`}(e,Date.now(),s),l=await fetch(encodeURI(d),{method:"GET"});if(!l.ok)throw m.errorRequestAbDict(d),b(r,u,e),document?.body?.style?.setProperty("visibility","visible"),new Error(l.statusText);{const d=await l.json(),{isDesktop:y,isTablet:w,isMobile:$,options:g,regions:E,pageUrl:T,enableAdParams:A,enableGetParams:C}=d,R=function(){const e="(max-width: 767px)",t="(min-width: 768px) and (max-width: 1023px)";return window.matchMedia(e).matches?o:window.matchMedia(t).matches?a:c}(),U=$&&R===o||w&&R===a||y&&R===c,I=0===E.length||E.map(e=>e.code).includes(s),S=P(T,A,C),N=Boolean(g.find(e=>P(e.pageUrl,A,C))),B=v(T).hostname;if(!A&&(h=window.location.search,Boolean(h.substring(1).split("&").map(e=>e.split("=")[0]).find(e=>p.includes(e))))&&f(u,_("utm",r,e)),(S||N)&&U&&I){const s=function(e,n){if(e){const s=e.split(t).map(e=>e.split(i)).find(e=>e[0]===n);return s&&s.length>1?s[1]:null}return null}(r,e);if(!s&&S&&g.length){const t=function(e){const t=100*Math.random()+0,i=JSON.parse(JSON.stringify(e));return i.forEach((e,t)=>{0!==t&&(i[t].trafficPercent=i[t-1].trafficPercent+i[t].trafficPercent)}),i.push({id:n,trafficPercent:Number.MAX_SAFE_INTEGER}),i.find(e=>e.trafficPercent>t)}(g);f(u,_(t.id,r,e)),t.id!==n&&v(t.pageUrl).hostname===B?window.location.assign(x(t.pageUrl)):(document?.body?.style?.setProperty("visibility","visible"),m.showExpPage(t.id))}else if(s&&s===n)document?.body?.style?.setProperty("visibility","visible"),m.showExpPage(n);else if(s&&"utm"!==s){const t=g.find(e=>Number(e.id)===Number(s));t&&P(t.pageUrl,A,C)?(document?.body?.style?.setProperty("visibility","visible"),m.showExpPage(t.id)):t&&S&&v(t.pageUrl).hostname===B?window.location.assign(x(t.pageUrl)):t||(document?.body?.style?.setProperty("visibility","visible"),b(r,u,e))}else document?.body?.style?.setProperty("visibility","visible")}else m.errorParamsMatch({isExpStartPage:S,isExpRedirectPage:N,isDeviceMatch:U,isRegionMatch:I})}}catch(e){document?.body?.style?.setProperty("visibility","visible")}}else m.userAgentEvent("error"),document?.body?.style?.setProperty("visibility","visible");var h;function y(e){return e.length>=300?y(e.substring(e.indexOf(t)+2)):e}function w(e){const t=document.cookie.match(new RegExp(`(?:^|; )${e.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g,"\\$1")}=([^;]*)`));return t?decodeURIComponent(t[1]):void 0}function f(e,t){const i=new Date;i.setDate(i.getDate()+90);const n={path:"/",expires:i.toUTCString()};let s=`${encodeURIComponent(e)}=${encodeURIComponent(y(t))}`;Object.keys(n).forEach(e=>{s+=`; ${e}`;const t=n[e];!0!==t&&(s+=`=${t}`)}),document.cookie=s}function b(e,t,i){const n=_("",e,i);var s;n?f(t,n):w(s=t)&&(document.cookie=`${s}=; path=/; expires=Thu, 01 Jan 1970 00:00:01 GMT`)}function _(e,n,s){if(n){const r=n.split(t).map(e=>e.split(i)),o=r.find(e=>e[0]===s);return o&&o.length>1?e?(o[1]=e,r.map(e=>e.join(i)).join(t)):r.filter(e=>e!==o).map(e=>e.join(i)).join(t):e?n.concat(`${t}${s}${i}${e}`):n}return e?`${s}${i}${e}`:""}function $(e,t="",i="",n={id:"",testCode:""}){window.dataLayer&&window.dataLayer.push({event:e,action:t,label:i}),window.yaParams?window.yaParams.sessions_params||(window.yaParams.sessions_params={}):window.yaParams={sessions_params:{}},n.id&&(window.yaParams.sessions_params._ABexp=`id_${n.testCode}_${n.id}`),window.yaParams.sessions_params._ABexpInit=`testCode_${n.testCode}`,["yaCounter1175048","yaCounter34972370","yaCounter31643078"].forEach(e=>{window[e]&&window[e].params(window.yaParams||{})})}function g(e){return e.substring(1).split("&").map(e=>e.split("=")[0]).filter(e=>e)}function v(e){const t=e.trim().toLowerCase();let i,o=new URL(`${s}${r}${n}`);i=t.startsWith(`http:${r}`)||t.startsWith(`${s}${r}`)?t:0===t.indexOf(`${r}`)?`${s}${t}`:`${s}${r}${t}`;try{o=new URL(i)}catch(e){}return o}function E(e){return e.includes(r)?e.substring(e.indexOf(r)+2):e}function P(e,t,i){const n=window?.location,s=v(e),r=n.hostname+n.pathname===s.hostname+s.pathname;return t&&i?r:i?r&&(!n.search||g(n.search).every(e=>!p.includes(e))):t?r&&(!n.search||g(n.search).every(e=>p.includes(e))):(o=n.href,a=s.href,E(v(o).href)===E(v(a).href));var o,a}function x(e){const t=window?.location,i=v(e),n=`${t.protocol}${r}${E(i.href)}`,s=i.search?"&":"?",o=t.search.substring(1).split("&").map(e=>e.split("=")).filter(e=>p.includes(e[0])).map(e=>`${e[0]}=${e[1]}`).join("&"),a=o?`${n}${s}${o}`:n;return t.search?a:n}setTimeout(()=>{document?.body?.style?.setProperty("visibility","visible")},1500)}
+    </script>
   </head>
   <body>
     <header class="header">
@@ -18,15 +32,6 @@
     <footer class="footer">
       <p class="footer__description">(с) 2024, demo-site.</p>
     </footer>
-<!-- Sber Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'stm.start':
-new Date().getTime(),event:'stm_init'}); 
-w['stmUrl']='https://tvldw-sbc000001.delta.sbrf.ru/';
-var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
-j.async=true;j.src=
-'https://tvldw-sbc000001.delta.sbrf.ru/stm/container/'+i+'.js?v=' + Math.random();
-f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','STM-Y60QV10962');</script>
-<!-- End Sber Tag Manager -->
+
       </body>
 </html>
